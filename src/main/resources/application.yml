@@ -1,0 +1,8 @@
+cors:
+  allowed-origins: 'https://ilearning-task-6-client.herokuapp.com'
+  allowed-methods: '*'
+  allow-credentials: 'false'
+  allowed-headers: '*'
+  mapping: '/**'
+external-api:
+  url: 'https://randomuser.me/api/'

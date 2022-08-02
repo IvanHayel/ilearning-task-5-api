@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 public class FakeGenerationServiceImpl implements FakeGenerationService {
   private static final String FAKER_NOISE = "#";
   private static final String EMPTY = "";
+
   ErrorSimulationService errorSimulationService;
 
   @Override

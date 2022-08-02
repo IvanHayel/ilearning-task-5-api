@@ -1,7 +1,6 @@
 package by.hayel.data.random.api.config;
 
 import by.hayel.data.random.api.config.properties.CorsProperties;
-import by.hayel.data.random.api.config.properties.ExternalApiProperties;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -11,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@EnableConfigurationProperties({CorsProperties.class, ExternalApiProperties.class})
+@EnableConfigurationProperties(CorsProperties.class)
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class WebConfiguration implements WebMvcConfigurer {

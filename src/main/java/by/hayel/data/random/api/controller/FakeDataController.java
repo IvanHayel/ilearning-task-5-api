@@ -43,7 +43,7 @@ public class FakeDataController {
   }
 
   private Long parseSeed(String seed, String page) {
-    return (seed == null ? generator.nextLong() : Long.parseLong(seed))
-        + (page == null ? 0 : Long.parseLong(page));
+    return (seed == null || seed.isBlank() ? generator.nextLong() : Long.parseLong(seed))
+        + (page == null || page.isBlank() ? 0 : Long.parseLong(page));
   }
 }

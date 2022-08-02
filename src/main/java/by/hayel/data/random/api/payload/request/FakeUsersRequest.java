@@ -12,7 +12,7 @@ import lombok.experimental.FieldDefaults;
 public class FakeUsersRequest implements ClientRequest {
   String seed;
   String page;
-  String nationality;
+  String locale;
   String count;
   String errorRate;
 }

@@ -4,5 +4,3 @@ cors:
   allow-credentials: 'false'
   allowed-headers: '*'
   mapping: '/**'
-external-api:
-  url: 'https://randomuser.me/api/'

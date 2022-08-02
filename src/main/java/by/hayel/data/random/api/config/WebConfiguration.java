@@ -6,9 +6,7 @@ import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -27,10 +25,5 @@ public class WebConfiguration implements WebMvcConfigurer {
         .allowedMethods(corsProperties.getAllowedMethods())
         .allowedHeaders(corsProperties.getAllowedHeaders())
         .allowCredentials(corsProperties.isAllowCredentials());
-  }
-
-  @Bean
-  public RestTemplate restTemplate() {
-    return new RestTemplate();
   }
 }

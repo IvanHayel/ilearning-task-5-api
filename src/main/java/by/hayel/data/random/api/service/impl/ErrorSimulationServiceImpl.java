@@ -55,7 +55,7 @@ public class ErrorSimulationServiceImpl implements ErrorSimulationService {
       case ID -> user.setId(addRandomDigit(user.getId()));
       case NAME -> user.setName(addRandomSymbol(user.getName()));
       case ADDRESS -> user.setAddress(addRandomSymbol(user.getAddress()));
-      case PHONE -> user.setPhone(addRandomSymbol(user.getPhone()));
+      case PHONE -> user.setPhone(addRandomDigit(user.getPhone()));
     }
   }
 

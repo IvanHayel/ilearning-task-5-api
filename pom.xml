@@ -15,7 +15,7 @@
   <name>Random Data API</name>
   <properties>
     <java.version>17</java.version>
-    <java.faker>1.0.2</java.faker>
+    <data.faker>1.4.0</data.faker>
   </properties>
   <dependencies>
     <dependency>
@@ -39,9 +39,9 @@
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>com.github.javafaker</groupId>
-      <artifactId>javafaker</artifactId>
-      <version>${java.faker}</version>
+      <groupId>net.datafaker</groupId>
+      <artifactId>datafaker</artifactId>
+      <version>${data.faker}</version>
     </dependency>
   </dependencies>
 

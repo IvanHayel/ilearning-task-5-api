@@ -3,7 +3,6 @@ package by.hayel.data.random.api.service.impl;
 import by.hayel.data.random.api.model.user.User;
 import by.hayel.data.random.api.service.ErrorSimulationService;
 import by.hayel.data.random.api.service.FakeGenerationService;
-import com.github.javafaker.Faker;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -12,6 +11,7 @@ import java.util.Random;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import net.datafaker.Faker;
 import org.springframework.stereotype.Service;
 
 @Service

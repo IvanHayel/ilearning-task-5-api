@@ -35,11 +35,11 @@ public class FakeDataController {
   }
 
   private Double parseErrorRate(String errorRate) {
-    return errorRate == null ? 0.0 : Double.parseDouble(errorRate);
+    return errorRate == null || errorRate.isBlank() ? 0.0 : Double.parseDouble(errorRate);
   }
 
   private Locale parseLocale(String locale) {
-    return locale == null ? Locale.ENGLISH : Locale.forLanguageTag(locale);
+    return locale == null || locale.isBlank() ? Locale.ENGLISH : Locale.forLanguageTag(locale);
   }
 
   private Long parseSeed(String seed, String page) {

@@ -20,11 +20,6 @@ public class ErrorSimulationServiceImpl implements ErrorSimulationService {
 
   Random generator;
 
-  private Object getRandom(Object[] objects) {
-    if(objects == null || objects.length == 0) return null;
-    return objects[generator.nextInt(objects.length)];
-  }
-
   @Override
   public List<User> simulateErrors(List<User> users, Double rate) {
     if(rate == null || rate < MIN_ERROR_RATE || rate > MAX_ERROR_RATE) return users;
@@ -38,6 +33,11 @@ public class ErrorSimulationServiceImpl implements ErrorSimulationService {
       }
     }
     return users;
+  }
+
+  private Object getRandom(Object[] objects) {
+    if(objects == null || objects.length == 0) return null;
+    return objects[generator.nextInt(objects.length)];
   }
 
   private void simulateError(User user, SimulationErrorField field, SimulationErrorType type,
